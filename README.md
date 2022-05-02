@@ -1,4 +1,4 @@
-# POC 
+# POC Spring Cloud OpenFeign
 
 ### Technologies
 * Java 17
