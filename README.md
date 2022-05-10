@@ -1,3 +1,5 @@
+[![build](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd.yml/badge.svg?branch=master)](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd.yml)
+
 # POC Spring Cloud OpenFeign
 
 ### Technologies
