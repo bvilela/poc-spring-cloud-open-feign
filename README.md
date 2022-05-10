@@ -5,6 +5,9 @@
 
 # POC Spring Cloud OpenFeign
 
+### Summary
+This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to an API and to explore Lib's functions.
+
 ### Technologies
 * Java 17
 * Spring Boot 2.6.7
