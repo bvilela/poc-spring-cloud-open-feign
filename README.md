@@ -25,4 +25,17 @@ This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to 
 * [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 ### CURLs Examplos
-* **GET Busca CEP:** curl --location --request GET 'localhost:8080/poc/busca-cep/01001000'
+* **GET Busca CEP:**
+```
+curl --location --request GET 'localhost:8080/poc/busca-cep/01001000'
+```
+* **POST criar Post:** 
+```
+curl --location --request POST 'localhost:8080/poc/criar-post' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}'
+```
