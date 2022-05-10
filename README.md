@@ -2,7 +2,7 @@
 
 ### Technologies
 * Java 17
-* Spring Boot 2.6.5
+* Spring Boot 2.6.7
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
 * Lombok
 * Static Code Analysis: SonarCloud
