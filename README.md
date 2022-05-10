@@ -12,10 +12,16 @@ This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to 
 * Java 17
 * Spring Boot 2.6.7
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
-* Lombok
-* Static Code Analysis: SonarCloud
+* [Lombok](https://projectlombok.org/)
+* Static Code Analysis: [SonarCloud](https://sonarcloud.io/)
 
 ### GitHub Action
-* Build and Test Java with Maven (branch)
-* Analyze SonarCloud (branch)
-* Publish on GitHub Packages (tags)
+* Build and Test Java with Maven (branch master)
+* Analyze SonarCloud (branch master)
+* Publish on GitHub Packages (tag/release)
+
+### Public APIs used
+* [ViaCEP](https://viacep.com.br/)
+
+### CURLs Examplos
+* **GET Busca CEP:** curl --location --request GET 'localhost:8080/poc/busca-cep/01001000'
