@@ -4,8 +4,10 @@ public class ClientException extends Exception {
 
 	private static final long serialVersionUID = 6148766310507726598L;
 	
+	private static final String DEFAULT_MESSAGE = "An error has occurred in Client";
+	
 	public ClientException() {
-		super();
+		super(DEFAULT_MESSAGE);
 	}
 	
 	public ClientException(String message) {

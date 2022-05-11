@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bruno.pocopenfeign.client.ViaCepClient;
-import com.bruno.pocopenfeign.dto.ViaCepDTO;
+import com.bruno.pocopenfeign.dto.ViaCepResponseDTO;
 import com.bruno.pocopenfeign.exception.ClientException;
 import com.bruno.pocopenfeign.service.ViaCepService;
 
@@ -22,12 +22,12 @@ public class ViaCepServiceImpl implements ViaCepService {
 	}
 
 	@Override
-	public ViaCepDTO buscaCep(String cep) throws ClientException {
+	public ViaCepResponseDTO buscarCep(String cep) throws ClientException {
+		String msgLog = "ViaCepServiceImpl - buscaCep";
 		
 		try {
-			String msgLog = "ViaCepServiceImpl - buscaCep";
 			log.info("{} - chamando Client", msgLog);
-			var dto = client.buscaCep(cep);
+			var dto = client.buscarCep("exemploToke", cep);
 			log.info("{} - Client respondeu com sucesso", msgLog);
 			log.info("{} - Retorno Client: {}", msgLog, dto.toString());
 			
