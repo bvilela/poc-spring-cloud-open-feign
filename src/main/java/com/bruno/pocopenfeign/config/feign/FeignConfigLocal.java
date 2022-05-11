@@ -39,6 +39,6 @@ public class FeignConfigLocal {
 		} catch (Exception e) {
 		}
 		return new Client.Proxied(null, null,
-				new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.redecardsa.rccorp.net", 8080)));
+				new Proxy(Proxy.Type.HTTP, new InetSocketAddress("your_proxy", 8080)));
 	}
 }
