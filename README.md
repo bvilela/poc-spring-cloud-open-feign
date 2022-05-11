@@ -5,17 +5,42 @@
 
 # POC Spring Cloud OpenFeign
 
-### Summary
+## Summary
 This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to an API and to explore Lib's functions.
 
-### Technologies
+## Technologies
 * Java 17
 * Spring Boot 2.6.7
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
-* Lombok
-* Static Code Analysis: SonarCloud
+* [Lombok](https://projectlombok.org/)
+* [SpringFox 3.0.0](https://springfox.github.io/springfox/)
+* Gson 2.9.0
+* Static Code Analysis: [SonarCloud](https://sonarcloud.io/)
 
-### GitHub Action
-* Build and Test Java with Maven (branch)
-* Analyze SonarCloud (branch)
-* Publish on GitHub Packages (tags)
+## GitHub Action
+* Build and Test Java with Maven (branch master)
+* Analyze SonarCloud (branch master)
+* Publish on GitHub Packages (tag/release)
+
+## Public APIs used
+* [ViaCEP](https://viacep.com.br/)
+* [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+
+## Swagger DOC
+http://localhost:8080/poc/swagger-ui/index.html#/
+
+## CURLs Examplos
+* **GET Busca CEP:**
+```
+curl --location --request GET 'localhost:8080/poc/busca-cep/01001000'
+```
+* **POST criar Post:** 
+```
+curl --location --request POST 'localhost:8080/poc/criar-post' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}'
+```
