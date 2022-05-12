@@ -8,6 +8,8 @@
 ## Summary
 This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to an API and to explore Lib's functions.
 
+Click [here](https://medium.com/@brunovilela2008/java-fazendo-chamadas-rest-com-spring-cloud-openfeign-31f70f9144f7) for view article in Medium.
+
 ## Technologies
 * Java 17
 * Spring Boot 2.6.7
@@ -16,6 +18,7 @@ This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to 
 * [SpringFox 3.0.0](https://springfox.github.io/springfox/)
 * Gson 2.9.0
 * Static Code Analysis: [SonarCloud](https://sonarcloud.io/)
+* Maven
 
 ## GitHub Action
 * Build and Test Java with Maven (branch master)
