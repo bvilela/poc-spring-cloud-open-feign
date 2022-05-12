@@ -1,9 +1,18 @@
+# POC Spring Cloud OpenFeign
+
+### Quality Status
 [![build](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd.yml/badge.svg?branch=master)](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd.yml)
 [![publish](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd_publish.yml/badge.svg)](https://github.com/bvilela/poc-spring-cloud-open-feign/actions/workflows/maven_ci_cd_publish.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bvilela_poc-spring-cloud-open-feign&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bvilela_poc-spring-cloud-open-feign)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bvilela_poc-spring-cloud-open-feign&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bvilela_poc-spring-cloud-open-feign)
 
-# POC Spring Cloud OpenFeign
+### Repository Statistics
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=bvilela_poc-spring-cloud-open-feign&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=bvilela_poc-spring-cloud-open-feign)
+![GitHub repo size](https://img.shields.io/github/repo-size/bvilela/poc-spring-cloud-open-feign)
+![GitHub language count](https://img.shields.io/github/languages/count/bvilela/poc-spring-cloud-open-feign)
+![GitHub open issues](https://img.shields.io/github/issues-raw/bvilela/poc-spring-cloud-open-feign)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr/bvilela/poc-spring-cloud-open-feign)
+<!--![GitHub forks](https://img.shields.io/github/forks/bvilela/poc-spring-cloud-open-feign)-->
 
 ## Summary
 This PoC (Proof of Concept) uses Spring Cloud OpenFeign to make a REST calls to an API and to explore Lib's functions.
@@ -47,3 +56,5 @@ curl --location --request POST 'localhost:8080/poc/criar-post' \
     "userId": 1
 }'
 ```
+
+[⬆ Voltar ao topo](#poc-spring-cloud-openfeign)<br>
