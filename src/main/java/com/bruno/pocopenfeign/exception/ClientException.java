@@ -1,6 +1,6 @@
 package com.bruno.pocopenfeign.exception;
 
-public class ClientException extends Exception {
+public class ClientException extends RuntimeException {
 
 	private static final long serialVersionUID = 6148766310507726598L;
 	
