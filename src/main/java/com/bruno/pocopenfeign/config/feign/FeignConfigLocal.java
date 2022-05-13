@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Profile;
 
 import feign.Client;
 
-@Profile("local")
+@Profile("local-proxy")
 @Configuration
 public class FeignConfigLocal {
 	
