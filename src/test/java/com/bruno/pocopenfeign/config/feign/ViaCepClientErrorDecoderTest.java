@@ -20,20 +20,13 @@ class ViaCepClientErrorDecoderTest {
 	@Mock
 	private ViaCepClientErrorDecoder decoder;
 	
-	private Response responseNotFound;
 	private Response responseBadRequest;
 	
 	@BeforeEach
 	void setup() {
 		decoder = new ViaCepClientErrorDecoder();
 		var request = FeignRequestBuilder.create().withHttpGet().build();
-		responseNotFound = Response.builder().status(404).request(request).build();
 		responseBadRequest = Response.builder().status(400).body("", StandardCharsets.UTF_8).request(request).build();
-	}
-	
-	@Test
-	void shouldClientExceptionNotFound() {
-		baseClientException(responseNotFound);
 	}
 	
 	@Test
